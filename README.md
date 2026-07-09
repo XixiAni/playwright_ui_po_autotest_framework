@@ -33,7 +33,7 @@ flowchart TD
 ### 基础运行依赖
 - Python 3.13+
 - 系统预装 Microsoft Edge（Chromium 内核）
-- 完整依赖清单见  `requirements.txt`
+- 完整依赖清单见  [requirements.txt](requirements.txt)
 
 ### Allure报告额外依赖
 - JDK 17+
@@ -91,11 +91,11 @@ pytest -m smoke -vs -n auto --alluredir=./report/allure-results
 
 ## 📖 更多文档
  
-- 详细使用说明：见  `DETAILED_USAGE.md` ，包含完整原理、API说明、问题排查
+- 详细使用说明：见  [DETAILED_USAGE.md](DETAILED_USAGE.md) ，包含完整原理、API说明、问题排查
 ​
-- 版本变更记录：见  `CHANGELOG.md` 
+- 版本变更记录：见   [CHANGELOG.md](CHANGELOG.md)
 ​
-- 详细命令清单：见  `DETAILED_USAGE.md`  第八章
+- 详细命令清单：见  [DETAILED_USAGE.md](DETAILED_USAGE.md)  第八章
 
 ## ❓ 常见问题
  
@@ -117,7 +117,7 @@ chcp 65001
  
 3. Allure命令找不到？
  
-需先安装JDK17与Allure CLI，并配置系统环境变量，详细步骤见  `DETAILED_USAGE.md` 。
+需先安装JDK17与Allure CLI，并配置系统环境变量，详细步骤见  [DETAILED_USAGE.md](DETAILED_USAGE.md) 。
  
 4. 如何新增业务页面？
  
@@ -131,4 +131,4 @@ chcp 65001
  
 ## 📄 License
  
-本项目采用 MIT 协议开源，详见  `LICENSE`  文件。
+本项目采用 MIT 协议开源，详见  [LICENSE](LICENSE)  文件。
