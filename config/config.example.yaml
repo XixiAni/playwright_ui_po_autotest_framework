@@ -1,0 +1,51 @@
+# 全局框架公共配置（示例模板）
+# 使用说明：复制本文件改名为 config.yaml，修改下方参数为本地实际值即可
+
+# 浏览器启动配置
+browser:
+  # 浏览器可执行文件绝对路径；不填或路径不存在时，自动降级为系统Edge自动识别
+  executable_path: "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  # 是否无头模式运行：false=可视化窗口，true=后台静默运行
+  headless: false
+  # 浏览器启动参数列表
+  args:
+    - "--disable-extensions"
+    - "--no-sandbox"
+    - "--incognito"
+    - "--disable-popup-blocking"
+    - "--start-maximized"
+    - "--disable-blink-features=AutomationControlled"
+
+# 全局超时配置（单位：毫秒）
+timeout:
+  # 元素等待默认超时
+  element_wait: 10000
+  # 弹窗操作超时
+  popup_wait: 1000
+  # 输入框可见等待超时
+  input_visible: 2500
+  # 点击元素可见等待超时
+  click_visible: 4000
+
+# 视口配置
+viewport:
+  width: 1920
+  height: 1080
+
+# 报告与截图配置
+report:
+   # allure原始数据存放目录
+   allure_result_dir: "./report/allure-results"
+   # 失败截图本地存放目录
+   screenshot_dir: "./report/screenshots"
+   # 失败是否自动挂载截图到allure报告
+   auto_screenshot: true
+
+# 用例失败重试配置
+rerun:
+  # 全局重试总开关
+  enable: true
+  # 最大重试次数（首次执行失败后，额外重试的次数）
+  max_times: 2
+  # 每次重试间隔时间，单位秒
+  delay: 1

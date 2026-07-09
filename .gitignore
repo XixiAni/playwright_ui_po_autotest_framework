@@ -1,0 +1,66 @@
+# ===== Python 编译缓存 =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ===== 虚拟环境 =====
+venv/
+env/
+ENV/
+.venv/
+
+# ===== IDE 编辑器配置 =====
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ===== 项目运行产物 =====
+logs/
+report/
+.pytest_cache/
+allure-results/
+allure-report/
+
+# ===== 系统临时文件 =====
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# ===== 临时验证脚本与草稿 =====
+绕过EPERM验证，使用Micro Edge__验证环境.py
+验证环境_JDK_Allure.py
+common_allure_funcs.txt
+
+# ===== 真实配置文件 =====
+config/config.yaml
+config/env/dev.yaml
+config/env/prod.yaml
+config/env/test.yaml
+
+# ===== 示例配置文件 =====
+!config/config.example.yaml
+!config/env/dev.example.yaml
+!config/env/prod.example.yaml
+!config/env/test.example.yaml
+
+

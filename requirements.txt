@@ -1,0 +1,7 @@
+playwright==1.55.0  # UI自动化核心库，提供操控浏览器、页面、元素的全套API
+pytest==7.4.4  # Python主流测试运行框架，管理测试用例、前置后置夹具、用例执行顺序
+pytest-html==4.0.2  # 作用：pytest插件，执行完自动生成可视化HTML测试报告，展示用例成功/失败、执行耗时
+allure-pytest==2.13.2  # 作用：pytest插件，生成Allure测试报告
+pyyaml==6.0.3  # 作用：Python的YAML解析器和生成器，支持YAML 1.2规范
+pytest-rerunfailures==12.0 # 通过Pytest钩子机制，用例call阶段（业务代码执行阶段）失败后，按照配置的次数重新执行整条用例。兼容pytest7.4.4版本。
+pytest-xdist==3.6.1  # pytest官方并发插件，多进程分发用例，缩短全量回归执行时长

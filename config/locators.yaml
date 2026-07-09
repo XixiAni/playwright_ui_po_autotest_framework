@@ -1,0 +1,14 @@
+# 百度首页元素定位器
+search_page:
+  search_input: "#kw"
+  search_button: "#su"
+  result_item: "#content_left .result:not(.leftBlock)"
+  
+# 通用弹窗关闭选择器（全局复用）
+common:
+  popup_close_selectors:
+    - ".close-btn"
+    - "#close"
+    - ".c-btn-close"
+    - ".dialog-close"
+  

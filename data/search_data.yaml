@@ -1,0 +1,26 @@
+# 百度搜索场景测试数据集
+# 每组数据：case_id用例标识、case_name用例名称、keyword搜索关键词、expect_words断言校验关键词列表、marks用例标签列表
+search_cases:
+  - case_id: normal_ui_auto
+    case_name: "正常场景：UI自动化技术关键词搜索"
+    keyword: "Playwright UI自动化测试"
+    expect_words: ["playwright", "ui"]
+    marks: ["smoke", "regression"]
+
+  - case_id: normal_python
+    case_name: "正常场景：Python编程关键词搜索"
+    keyword: "Python自动化测试"
+    expect_words: ["python", "自动化"]
+    marks: ["smoke", "regression"]
+
+  - case_id: boundary_short_word
+    case_name: "边界场景：短关键词单字搜索"
+    keyword: "测试"
+    expect_words: ["测试"]
+    marks: ["regression"]
+  - case_id: abnormal_upper_en
+    case_name: "异常场景：英文纯大写关键词"
+    keyword: "PYTEST FRAMEWORK"
+    expect_words: ["pytest", "framework"]
+    marks: ["regression"]
+
